@@ -8,6 +8,7 @@ import {
 
 import DashboardPage from "./pages/DashboardPage";
 import PostsPage from "./pages/PostsPage";
+import OnePost from "./pages/OnePost";
 
 const App = () => {
   return (
@@ -18,6 +19,9 @@ const App = () => {
         </Route>
         <Route exact path="/posts">
           <PostsPage />
+        </Route>
+        <Route exact path="/posts/:id">
+          <OnePost />
         </Route>
         <Redirect to="/" />
       </Switch>
