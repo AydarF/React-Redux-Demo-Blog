@@ -8,21 +8,15 @@ import {
 
 import DashboardPage from "./pages/DashboardPage";
 import PostsPage from "./pages/PostsPage";
-import OnePost from "./pages/OnePost";
+import SinglePost from "./pages/SinglePost";
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <DashboardPage />
-        </Route>
-        <Route exact path="/posts">
-          <PostsPage />
-        </Route>
-        <Route exact path="/posts/:id">
-          <OnePost />
-        </Route>
+        <Route exact path="/" component={DashboardPage} />
+        <Route exact path="/posts" component={PostsPage} />
+        <Route path="/posts/:id" component={SinglePost} />
         <Redirect to="/" />
       </Switch>
     </Router>
