@@ -15,7 +15,7 @@ export const getCommentsFailure = () => ({
   type: GET_COMMENTS_FAILURE
 });
 
-export function fetchComments() {
+export function fetchComments(postId) {
   return async dispatch => {
     dispatch(getComments());
 

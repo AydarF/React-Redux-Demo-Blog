@@ -15,6 +15,7 @@ export default function commentsReducer(state = initialState, action) {
       };
     case actions.GET_COMMENTS_SUCCESS:
       return {
+        ...state,
         loading: false,
         comments: action.payload,
         hasErrors: false
