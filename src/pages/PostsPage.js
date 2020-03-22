@@ -16,8 +16,10 @@ const PostsPage = ({ dispatch, loading, posts, hasErrors }) => {
 
   return (
     <section>
-      <h1>Posts</h1>
-      {renderPosts()}
+      <div className="main">
+        <h1>Posts</h1>
+        {renderPosts()}
+      </div>
     </section>
   );
 };

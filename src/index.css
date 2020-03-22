@@ -9,27 +9,35 @@ p {
   font-size: 1.1rem;
 }
 
-nav {
-  display: flex;
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 2rem 0;
   background: #111;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-nav section {
+/* Make Navbar fixed and the conditionally appear */
+.navScrolled {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.nav section {
   width: 100%;
 }
 
-nav a {
+.nav a {
   font-weight: 700;
   padding: 1rem 1.5rem;
   border-radius: 4px;
 }
 
-nav a:first-of-type {
+.nav a:first-of-type {
   margin-left: -1.5rem;
 }
 
-nav a:hover {
+.nav a:hover {
   background: #222;
 }
 
@@ -43,6 +51,11 @@ section {
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
+}
+
+/* Top margin for sections tag */
+.main {
+  margin: 95px 0 0 0;
 }
 
 section h1 {

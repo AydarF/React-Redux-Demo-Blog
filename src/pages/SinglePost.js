@@ -39,7 +39,7 @@ const SinglePost = ({
   };
 
   return (
-    <section>
+    <section className="main">
       {renderPost()}
       <h3>Comments</h3>
       {renderComments()}
