@@ -39,10 +39,12 @@ const SinglePost = ({
   };
 
   return (
-    <section className="main">
-      {renderPost()}
-      <h3>Comments</h3>
-      {renderComments()}
+    <section>
+      <div className="main">
+        {renderPost()}
+        <h3>Comments</h3>
+        {renderComments()}
+      </div>
     </section>
   );
 };
